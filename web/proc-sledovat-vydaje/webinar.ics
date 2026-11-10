@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Za bohatsi Cesko//Webinare//CS
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-02-proc-sledovat-vydaje@webinare.zabohatsicesko.cz
+DTSTAMP:20261110T163000Z
+DTSTART:20261202T170000Z
+DTEND:20261202T180000Z
+SUMMARY:Webinář: Proč sledovat své výdaje a jak na to?
+DESCRIPTION:Online webinář Za bohatší Česko. Podrobnosti: https://webinare.zabohatsicesko.cz/proc-sledovat-vydaje/
+LOCATION:Online
+URL:https://webinare.zabohatsicesko.cz/proc-sledovat-vydaje/
+ORGANIZER;CN=Za bohatší Česko:mailto:info@zabohatsicesko.cz
+END:VEVENT
+END:VCALENDAR
