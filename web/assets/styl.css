@@ -192,6 +192,8 @@ h3 { font-size: clamp(22px, 2.4vw, 26px); line-height: 1.2; }
 }
 .pole input:focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px rgba(157,98,25,.18); }
 .pole input[aria-invalid="true"] { border-color: #a23a1f; }
+.pole__napoveda { font-size: 14px; line-height: 1.5; color: #4a4a4a; margin: -2px 0 8px; }
+.pole input::placeholder { color: #9a928b; }
 .pole__chyba { display: none; color: #a23a1f; font-size: 14px; margin-top: 6px; }
 .pole input[aria-invalid="true"] + .pole__chyba { display: block; }
 .past { position: absolute !important; left: -9999px !important; width: 1px; height: 1px; overflow: hidden; }

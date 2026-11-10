@@ -150,8 +150,10 @@
         </div>
 
         <div data-pro-stav="nadchazejici">
-          <!-- LEADAGENT: napojení formuláře se doplní podle kódu z LeadAgentu (Monika).
-               Do atributu action patří adresa z LeadAgentu, názvy polí se upraví podle jeho kódu. -->
+          <!-- ===== LEADAGENT FORMULÁŘ – ZAČÁTEK =====
+               Vše mezi ZAČÁTKEM a KONCEM lze nahradit kódem formuláře z LeadAgentu.
+               Ponech kolem něj <div class="formular">…</div>, aby formulář měl bílý rámeček.
+               Text pod tlačítkem o Zásadách zpracování osobních údajů musí zůstat. -->
           <form class="formular" id="registrace-formular" action="#" method="post" novalidate>
             <div class="pole">
               <label for="jmeno">Jméno a příjmení</label>
@@ -163,6 +165,12 @@
               <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="160">
               <p class="pole__chyba">Zadejte prosím platný e-mail.</p>
             </div>
+            <div class="pole">
+              <label for="telefon">Telefon</label>
+              <p class="pole__napoveda" id="telefon-napoveda">Telefonní číslo nám pomůže zůstat s&nbsp;Vámi v&nbsp;kontaktu. 3&nbsp;dny před webinářem Vám pošleme SMS připomínku a&nbsp;v&nbsp;den konání také informaci, kde najdete odkaz pro připojení.</p>
+              <input id="telefon" name="telefon" type="tel" autocomplete="tel" inputmode="tel" required maxlength="20" pattern="^[+]?[0-9 \-]{9,17}$" aria-describedby="telefon-napoveda" placeholder="+420 777 123 456">
+              <p class="pole__chyba">Zadejte prosím telefonní číslo, např. +420 777 123 456.</p>
+            </div>
             <div class="past" aria-hidden="true">
               <label for="web_adresa">Nevyplňujte</label>
               <input id="web_adresa" name="web_adresa" type="text" tabindex="-1" autocomplete="off">
@@ -173,9 +181,10 @@
             <p class="formular__gdpr">Odesláním formuláře berete na vědomí <a href="https://www.siriusfinance.cz/GDPR" target="_blank" rel="noopener">Zásady zpracování osobních údajů</a>.</p>
             <p class="formular__chyba" id="formular-chyba" role="alert"></p>
           </form>
+          <!-- ===== LEADAGENT FORMULÁŘ – KONEC ===== -->
           <div class="formular dekujeme skryt" id="dekujeme" aria-live="polite">
             <h3>Děkujeme za registraci.</h3>
-            <p><span class="doplnit">[DOPLNIT: co se stane po registraci – kdy a jak účastník dostane odkaz na připojení]</span></p>
+            <p>3&nbsp;dny před webinářem Vám pošleme SMS připomínku a&nbsp;v&nbsp;den konání také informaci, kde najdete odkaz pro připojení.</p>
             <p><a class="odkaz-tichy" href="webinar.ics" download="webinar-zbc-2026-12-02.ics">Přidat do kalendáře</a></p>
           </div>
         </div>
