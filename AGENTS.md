@@ -30,8 +30,9 @@ Hlavička (logo → zabohatsicesko.cz, „Všechny webináře“), úvod (štít
 Meta: title, description, canonical, Open Graph (+ og:image 1920 × 1005 od grafika), favicon, schema.org Event.
 
 ## Formulář do LeadAgentu
-- Registrace jdou do LeadAgentu (účet Moniky Koubkové). Kód napojení dodá Monika – vlož ho místo `action="#"` a uprav názvy polí podle něj.
-- Pole: jméno, e-mail (povinné). Skrytá pole `webinar` (datum + název) a `zdroj` (z `utm_source`, výchozí „web“). Honeypot `web_adresa`.
+- Repo je veřejné: nikdy sem nedávej hesla, klíče, osobní údaje ani interní poznámky.
+- Registrace jdou do LeadAgentu. Kód formuláře z LeadAgentu se vkládá mezi značky `LEADAGENT FORMULÁŘ – ZAČÁTEK/KONEC` ve stránce webináře.
+- Pole: jméno, e-mail, telefon (vše povinné). U telefonu vysvětlení: SMS připomínka 3 dny předem a v den konání informace, kde je odkaz pro připojení. Skrytá pole `webinar` (datum + název) a `zdroj` (z `utm_source`, výchozí „web“). Honeypot `web_adresa`.
 - Pod tlačítkem věta o Zásadách zpracování osobních údajů s odkazem https://www.siriusfinance.cz/GDPR. Další souhlas (marketing) jen jako nepovinné nezaškrtnuté políčko se schváleným zněním.
 - Nikdy nevkládej do stránky tajný klíč (API klíč, token). Kdyby ho LeadAgent vyžadoval, odesílání se přesune do Netlify Function a klíč do proměnné prostředí.
 - Žádné měřicí kódy ani cookies bez výslovného schválení.
