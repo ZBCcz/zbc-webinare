@@ -267,6 +267,57 @@ html:not([data-stav]) [data-pro-stav~="nadchazejici"] { display: revert; }
 .skryt { display: none !important; }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
-/* ---------- Formulář z LeadAgentu ---------- */
+/* ---------- Formulář z LeadAgentu ----------
+   LeadAgent vkládá vlastní HTML a styly (Bootstrap, Verdana/Roboto). Tady je sjednocujeme se značkou ZBČ.
+   Obsah formuláře (texty, pole, poděkování) se mění v LeadAgentu, ne tady. */
 .formular--leadagent .laf_container { min-height: 120px; }
+.formular--leadagent .lawf {
+  background: transparent !important; border-radius: 0 !important; padding: 0 !important; margin: 0 !important;
+  font-family: var(--font-text) !important; color: var(--light-black) !important;
+}
+.formular--leadagent .lawf * { font-family: var(--font-text) !important; }
+.formular--leadagent .lawf > div:first-child p,
+.formular--leadagent .lawf > div:first-child font,
+.formular--leadagent .lawf > div:first-child span {
+  color: var(--light-black) !important; font-size: 16px !important; line-height: 1.5 !important; text-align: left !important;
+}
+.formular--leadagent .lawf > div:first-child p { margin: 0 0 8px !important; }
+.formular--leadagent .lawf > div:first-child p + p, .formular--leadagent .lawf > div:first-child p + p * { font-size: 14px !important; color: #4a4a4a !important; }
+.formular--leadagent .la_form { margin-top: 18px !important; }
+.formular--leadagent .row { margin: 0 !important; }
+.formular--leadagent .col-md-12 { padding: 0 !important; }
+.formular--leadagent label.input_label { margin-bottom: 6px !important; font-size: 15px !important; }
+.formular--leadagent label.input_label strong { font-weight: 500 !important; }
+.formular--leadagent .form-group { margin-bottom: 14px !important; }
+.formular--leadagent .input-group { margin-bottom: 0 !important; flex-wrap: nowrap !important; }
+.formular--leadagent .input-icon { display: none !important; }
+.formular--leadagent .form-control {
+  min-height: 52px !important; height: auto !important; padding: 12px 16px !important;
+  font-size: 17px !important; color: var(--light-black) !important; background: var(--white) !important;
+  border: 1.5px solid #c9c1ba !important; border-radius: 10px !important; box-shadow: none !important;
+}
+.formular--leadagent .form-control:focus { border-color: var(--gold) !important; box-shadow: 0 0 0 3px rgba(157,98,25,.18) !important; outline: none !important; }
+.formular--leadagent .form-control::placeholder { color: #9a928b !important; }
+.formular--leadagent .mobile_prefix { flex: 0 0 104px !important; max-width: 104px !important; margin-right: 8px !important; }
+.formular--leadagent .select2-container .select2-selection--single {
+  height: 52px !important; border: 1.5px solid #c9c1ba !important; border-radius: 10px !important; background: var(--dark-white) !important;
+  display: flex !important; align-items: center !important;
+}
+.formular--leadagent .select2-selection__rendered { line-height: 1.2 !important; padding-left: 12px !important; font-size: 16px !important; color: var(--light-black) !important; }
+.formular--leadagent .select2-selection__arrow { height: 50px !important; }
+.formular--leadagent .input_mobile, .formular--leadagent input.mobile { border-radius: 10px !important; }
+.formular--leadagent label.validation_error { color: #a23a1f !important; font-size: 14px !important; margin-top: 6px !important; display: block; }
+.formular--leadagent .form-control.validation_error { border-color: #a23a1f !important; }
+.formular--leadagent button[type="submit"], .formular--leadagent .btn {
+  display: block !important; width: 100% !important; max-width: none !important; min-height: 52px !important;
+  padding: 14px 28px !important; margin: 8px 0 0 !important; border: 0 !important; border-radius: 999px !important;
+  background: var(--gold) !important; color: var(--white) !important;
+  font: 700 17px/1.2 var(--font-text) !important; cursor: pointer; box-shadow: none !important;
+}
+.formular--leadagent button[type="submit"]:hover { background: #87530f !important; }
+.formular--leadagent .alert-success {
+  background: var(--dark-white) !important; color: var(--light-black) !important; border: 0 !important;
+  border-radius: 10px !important; padding: 18px 20px !important; font-size: 17px !important; line-height: 1.5 !important;
+}
+.formular--leadagent .alert-danger { background: #f6e9e4 !important; color: #7a2b16 !important; border: 0 !important; border-radius: 10px !important; }
 .formular__kalendar { margin: 12px 0 0; }
