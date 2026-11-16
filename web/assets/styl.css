@@ -298,7 +298,8 @@ html:not([data-stav]) [data-pro-stav~="nadchazejici"] { display: revert; }
 }
 .formular--leadagent .form-control:focus { border-color: var(--gold) !important; box-shadow: 0 0 0 3px rgba(157,98,25,.18) !important; outline: none !important; }
 .formular--leadagent .form-control::placeholder { color: #9a928b !important; }
-.formular--leadagent .mobile_prefix { flex: 0 0 104px !important; max-width: 104px !important; margin-right: 8px !important; }
+.formular--leadagent .mobile_prefix { flex: 0 0 92px !important; max-width: 92px !important; margin-right: 8px !important; }
+.formular--leadagent input.mobile { min-width: 0 !important; }
 .formular--leadagent .select2-container .select2-selection--single {
   height: 52px !important; border: 1.5px solid #c9c1ba !important; border-radius: 10px !important; background: var(--dark-white) !important;
   display: flex !important; align-items: center !important;
