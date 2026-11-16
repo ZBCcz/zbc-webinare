@@ -42,7 +42,7 @@
 </head>
 <body>
   <!-- NÁHLED: odstranit po napojení formuláře na LeadAgent -->
-  <div class="nahled-pruh"><strong>Náhled.</strong> Formulář zatím není napojený na LeadAgent. Stránku zatím nesdílejte.</div>
+  <div class="nahled-pruh"><strong>Náhled.</strong> Formulář se testuje. Stránku zatím nesdílejte.</div>
 
   <header class="hlavicka">
     <div class="obal">
@@ -151,42 +151,16 @@
 
         <div data-pro-stav="nadchazejici">
           <!-- ===== LEADAGENT FORMULÁŘ – ZAČÁTEK =====
-               Vše mezi ZAČÁTKEM a KONCEM lze nahradit kódem formuláře z LeadAgentu.
-               Ponech kolem něj <div class="formular">…</div>, aby formulář měl bílý rámeček.
-               Text pod tlačítkem o Zásadách zpracování osobních údajů musí zůstat. -->
-          <form class="formular" id="registrace-formular" action="#" method="post" novalidate>
-            <div class="pole">
-              <label for="jmeno">Jméno a příjmení</label>
-              <input id="jmeno" name="jmeno" type="text" autocomplete="name" required maxlength="120">
-              <p class="pole__chyba">Vyplňte prosím jméno.</p>
-            </div>
-            <div class="pole">
-              <label for="email">E-mail</label>
-              <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="160">
-              <p class="pole__chyba">Zadejte prosím platný e-mail.</p>
-            </div>
-            <div class="pole">
-              <label for="telefon">Telefon</label>
-              <p class="pole__napoveda" id="telefon-napoveda">Telefonní číslo nám pomůže zůstat s&nbsp;Vámi v&nbsp;kontaktu. 3&nbsp;dny před webinářem Vám pošleme SMS připomínku a&nbsp;v&nbsp;den konání také informaci, kde najdete odkaz pro připojení.</p>
-              <input id="telefon" name="telefon" type="tel" autocomplete="tel" inputmode="tel" required maxlength="20" pattern="^[+]?[0-9 \-]{9,17}$" aria-describedby="telefon-napoveda" placeholder="+420 777 123 456">
-              <p class="pole__chyba">Zadejte prosím telefonní číslo, např. +420 777 123 456.</p>
-            </div>
-            <div class="past" aria-hidden="true">
-              <label for="web_adresa">Nevyplňujte</label>
-              <input id="web_adresa" name="web_adresa" type="text" tabindex="-1" autocomplete="off">
-            </div>
-            <input type="hidden" name="webinar" value="Webinář 2026-12-02 – Proč sledovat své výdaje a jak na to?">
-            <input type="hidden" name="zdroj" value="web">
-            <button class="tlacitko" type="submit">Registrovat se</button>
+               Formulář z LeadAgentu (pole, text po odeslání a automatizace se nastavují v LeadAgentu).
+               U dalšího webináře stačí vyměnit ID formuláře na obou řádcích. -->
+          <div class="formular formular--leadagent">
+            <div id="laf_MTc5NDgxNDQ5NC0=" class="laf_container"></div>
+            <script type="text/javascript" src="https://app.leadagent.cz/form/embed/MTc5NDgxNDQ5NC0="></script>
+            <noscript><p>Pro registraci prosím povolte v prohlížeči JavaScript, nebo nám napište na <a href="mailto:info@zabohatsicesko.cz">info@zabohatsicesko.cz</a>.</p></noscript>
             <p class="formular__gdpr">Odesláním formuláře berete na vědomí <a href="https://www.siriusfinance.cz/GDPR" target="_blank" rel="noopener">Zásady zpracování osobních údajů</a>.</p>
-            <p class="formular__chyba" id="formular-chyba" role="alert"></p>
-          </form>
-          <!-- ===== LEADAGENT FORMULÁŘ – KONEC ===== -->
-          <div class="formular dekujeme skryt" id="dekujeme" aria-live="polite">
-            <h3>Děkujeme za registraci.</h3>
-            <p>3&nbsp;dny před webinářem Vám pošleme SMS připomínku a&nbsp;v&nbsp;den konání také informaci, kde najdete odkaz pro připojení.</p>
-            <p><a class="odkaz-tichy" href="webinar.ics" download="webinar-zbc-2026-12-02.ics">Přidat do kalendáře</a></p>
+            <p class="formular__kalendar"><a class="odkaz-tichy" href="webinar.ics" download="webinar-zbc-2026-12-02.ics"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M12 13v5M9.5 15.5h5"/></svg>Přidat do kalendáře</a></p>
           </div>
+          <!-- ===== LEADAGENT FORMULÁŘ – KONEC ===== -->
         </div>
 
         <div class="stav-box" data-pro-stav="probiha">

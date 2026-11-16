@@ -266,3 +266,7 @@ html:not([data-stav]) [data-pro-stav~="nadchazejici"] { display: revert; }
 
 .skryt { display: none !important; }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ---------- Formulář z LeadAgentu ---------- */
+.formular--leadagent .laf_container { min-height: 120px; }
+.formular__kalendar { margin: 12px 0 0; }
