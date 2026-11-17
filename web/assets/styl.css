@@ -170,6 +170,27 @@ h3 { font-size: clamp(22px, 2.4vw, 26px); line-height: 1.2; }
 .fakta dt { font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); margin-bottom: 4px; }
 .fakta dd { margin: 0; font-weight: 500; }
 
+/* ---------- Přednášející ---------- */
+.lide__seznam { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px 16px; margin: 0; padding: 0; list-style: none; }
+@media (min-width: 640px) { .lide__seznam { grid-template-columns: repeat(3, 1fr); gap: 36px 24px; } }
+@media (min-width: 1000px) { .lide__seznam { grid-template-columns: repeat(5, 1fr); } }
+.osoba img {
+  width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; background: var(--light-black);
+  border-radius: 6px; border-top-left-radius: clamp(36px, 6vw, 64px);
+}
+.osoba h3 { font-size: clamp(20px, 2vw, 23px); margin: 16px 0 4px; }
+.osoba p { margin: 0; font-size: 14px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--gold); }
+
+.avatary { display: flex; align-items: center; flex-wrap: wrap; gap: 10px 14px; margin-top: 26px; }
+.avatary__fotky { display: flex; }
+.avatary__fotky img {
+  width: 44px; height: 44px; border-radius: 50%; object-fit: cover;
+  border: 2px solid var(--dark-white); background: var(--light-black);
+}
+.avatary__fotky img + img { margin-left: -10px; }
+.avatary p { margin: 0; font-size: 15px; font-weight: 500; }
+.avatary a { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+
 /* ---------- Registrace ---------- */
 .registrace {
   background: var(--light-black); color: var(--white);
