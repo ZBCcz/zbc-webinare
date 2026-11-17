@@ -183,14 +183,18 @@ h3 { font-size: clamp(22px, 2.4vw, 26px); line-height: 1.2; }
 
 /* Dva přednášející: na počítači nadpis vlevo, fotky vpravo */
 @media (min-width: 900px) {
-  .lide--dva .obal { display: grid; grid-template-columns: 1fr 1.5fr; gap: 72px; align-items: start; }
-  .lide--dva .sekce__hlava { margin-bottom: 0; }
+  .lide--vedle .obal { display: grid; grid-template-columns: 1fr 1.5fr; gap: 72px; align-items: start; }
+  .lide--vedle .sekce__hlava { margin-bottom: 0; }
 }
 .lide__seznam--dva { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; max-width: 680px; gap: 24px 20px; }
 @media (min-width: 640px) { .lide__seznam--dva { gap: 36px 32px; } }
 .lide__seznam--dva .osoba h3 { font-size: clamp(22px, 2.4vw, 28px); }
+/* Jeden přednášející */
+.lide__seznam--jeden { grid-template-columns: minmax(0, 340px) !important; }
+.lide__seznam--jeden .osoba h3 { font-size: clamp(24px, 2.6vw, 30px); }
 
-.avatary { display: flex; align-items: center; flex-wrap: wrap; gap: 10px 14px; margin-top: 26px; }
+.avatary { display: flex; align-items: center; flex-wrap: nowrap; gap: 12px; margin-top: 26px; }
+.avatary__fotky { flex: none; }
 .avatary__fotky { display: flex; }
 .avatary__fotky img {
   width: 44px; height: 44px; border-radius: 50%; object-fit: cover;
