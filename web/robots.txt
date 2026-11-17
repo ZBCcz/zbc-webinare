@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://webinare.zabohatsicesko.cz/sitemap.xml
