@@ -181,6 +181,15 @@ h3 { font-size: clamp(22px, 2.4vw, 26px); line-height: 1.2; }
 .osoba h3 { font-size: clamp(20px, 2vw, 23px); margin: 16px 0 4px; }
 .osoba p { margin: 0; font-size: 14px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--gold); }
 
+/* Dva přednášející: na počítači nadpis vlevo, fotky vpravo */
+@media (min-width: 900px) {
+  .lide--dva .obal { display: grid; grid-template-columns: 1fr 1.5fr; gap: 72px; align-items: start; }
+  .lide--dva .sekce__hlava { margin-bottom: 0; }
+}
+.lide__seznam--dva { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; max-width: 680px; gap: 24px 20px; }
+@media (min-width: 640px) { .lide__seznam--dva { gap: 36px 32px; } }
+.lide__seznam--dva .osoba h3 { font-size: clamp(22px, 2.4vw, 28px); }
+
 .avatary { display: flex; align-items: center; flex-wrap: wrap; gap: 10px 14px; margin-top: 26px; }
 .avatary__fotky { display: flex; }
 .avatary__fotky img {

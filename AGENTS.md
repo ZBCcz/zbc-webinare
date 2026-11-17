@@ -47,7 +47,7 @@ Kontrola: přidej na konec adresy `?nahled-stavu=nadchazejici|probiha|probehl`.
 1. Zkopíruj `sablona/webinar.html` → `web/[slug]/index.html` (slug krátký, bez diakritiky).
 2. Vyměň všechny údaje (název, termín, `data-zacatek/konec`, texty, skryté pole `webinar`, meta, schema.org, název .ics).
 3. Vytvoř `web/[slug]/webinar.ics` podle vzoru (časy v UTC).
-4. Přednášející: uprav sekci „Kdo vás webinářem provede“, avatary v úvodu a `performer` ve schema.org (fotky 640 × 640 WebP do `web/assets/lide/`, jména a pozice podle zabohatsicesko.cz/nas-tym). Když přednášející nejsou známí, všechna tři místa smaž.
+4. Přednášející: uprav sekci „Kdo vás webinářem provede“, avatary v úvodu a `performer` ve schema.org (fotky 800 × 800 WebP do `web/assets/lide/`, oříznuté tak, aby nebyla vidět useknutá ramena, jemně doostřené; pro 2 lidi třída `lide__seznam--dva`, jména a pozice podle zabohatsicesko.cz/nas-tym). Když přednášející nejsou známí, všechna tři místa smaž.
 5. Přidej kartu do `web/index.html`.
 6. Stránky a adresy proběhlých webinářů neměň, kromě doplnění odkazu na záznam/materiály.
 
