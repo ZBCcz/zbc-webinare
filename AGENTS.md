@@ -35,7 +35,6 @@ Meta: title, description, canonical, Open Graph (+ og:image 1920 × 1005 od graf
 - Pole: jméno, e-mail, telefon (vše povinné). U telefonu vysvětlení: SMS připomínka 3 dny předem a v den konání informace, kde je odkaz pro připojení. Skrytá pole `webinar` (datum + název) a `zdroj` (z `utm_source`, výchozí „web“). Honeypot `web_adresa`.
 - Pod tlačítkem věta o Zásadách zpracování osobních údajů s odkazem https://www.siriusfinance.cz/GDPR. Další souhlas (marketing) jen jako nepovinné nezaškrtnuté políčko se schváleným zněním.
 - Nikdy nevkládej do stránky tajný klíč (API klíč, token). Kdyby ho LeadAgent vyžadoval, odesílání se přesune do Netlify Function a klíč do proměnné prostředí.
-- Žádné měřicí kódy ani cookies bez výslovného schválení.
 
 ## Automatický stav podle data
 `<html data-zacatek data-konec>` (ISO, Praha: zima +01:00, léto +02:00) a karty `<li data-webinar data-zacatek data-konec>` v přehledu.
@@ -60,3 +59,10 @@ Kontrola: přidej na konec adresy `?nahled-stavu=nadchazejici|probiha|probehl`.
 ## Kontrola po každé změně
 Mobil 360/390 px bez vodorovného posouvání, desktop 1440 px, všechny tři stavy, odkazy, konzole bez chyb, texty proti podkladům.
 Na konci napiš: co se změnilo, co chybí ([DOPLNIT]), co je odhad.
+
+## Cookies a měření (GA4)
+- `web/assets/souhlas.js` řídí souhlas a Google Analytics 4 (G-MXDRDK7MQN, Basic Consent Mode). Musí být v `<head>` každé stránky před `webinare.js`. Google skript se načte až po kliknutí na „Povolit“.
+- Volba je v localStorage pod klíčem `zbc_webinare_consent` (stav, čas, platnost 6 měsíců, verze). Při změně účelu nebo textu lišty zvyš `VERZE` v souhlas.js – všichni se pak zeptají znovu.
+- Stránka `web/cookies/index.html`, odkaz „Cookies“ v patičce každé stránky hned za zásadami.
+- Do GA nikdy neposílej osobní údaje: `page_location` obsahuje jen cestu a `utm_*`. Nepřidávej vlastní události s údaji z formulářů.
+- Další měřicí nebo reklamní kódy (pixely, Ads) jen po schválení a s úpravou lišty i Prohlášení o cookies.
