@@ -91,7 +91,6 @@
     s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
     document.head.appendChild(s);
 
-    gtag("js", new Date());
     var nastaveni = {
       cookie_domain: COOKIE_DOMENA,
       cookie_prefix: COOKIE_PREFIX,
@@ -103,6 +102,10 @@
       page_location: cistaAdresa(window.location.href)
     };
     if (document.referrer) nastaveni.page_referrer = cistaAdresa(document.referrer);
+    // Ověřeno na ostrém webu: samotný config parametry cookies a page_location nepřevzal,
+    // proto je nastavujeme i přes „set“ (doporučení Googlu) – před js a config.
+    gtag("set", nastaveni);
+    gtag("js", new Date());
     gtag("config", GA_ID, nastaveni);
   }
 
