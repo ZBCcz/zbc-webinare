@@ -400,7 +400,14 @@ html:not([data-stav]) [data-pro-stav~="nadchazejici"] { display: revert; }
 .cookies-stranka .text p { font-size: 17px; }
 .cookies-stranka__volba { margin: 32px 0 0; padding: 20px 22px; background: var(--dark-white); border-radius: var(--radius); max-width: var(--text); }
 .cookies-stranka__volba p { margin: 0 0 14px; font-weight: 500; }
-.cookies-stranka__dalsi { margin-top: 28px; max-width: var(--text); }
+.cookies-stranka__dalsi { margin-top: 48px; max-width: var(--text); }
+.cookies-stranka__cast { margin-top: 56px; }
+.cookies-stranka__cast h2 { font-size: clamp(26px, 3.2vw, 34px); margin-bottom: 16px; }
+.cookies-stranka__cast ul { margin: 0 0 1.1em; padding-left: 1.2em; }
+.cookies-stranka__cast li { margin-bottom: 8px; }
+.cookies-stranka__cast li::marker { color: var(--gold); }
+.cookies-stranka__cast code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .88em; background: var(--dark-white); padding: 1px 6px; border-radius: 4px; overflow-wrap: anywhere; }
+.cookies-stranka__zdroje { font-size: 15px; color: #4a4a4a; }
 
 /* Patička: odkazy vedle sebe, na mobilu se zalomí celé */
 .paticka__odkazy a { white-space: nowrap; }

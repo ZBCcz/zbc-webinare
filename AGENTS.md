@@ -66,3 +66,4 @@ Na konci napiš: co se změnilo, co chybí ([DOPLNIT]), co je odhad.
 - Stránka `web/cookies/index.html`, odkaz „Cookies“ v patičce každé stránky hned za zásadami.
 - Do GA nikdy neposílej osobní údaje: `page_location` obsahuje jen cestu a `utm_*`. Nepřidávej vlastní události s údaji z formulářů.
 - Další měřicí nebo reklamní kódy (pixely, Ads) jen po schválení a s úpravou lišty i Prohlášení o cookies.
+- Formulář LeadAgentu je cizí služba: nic v jeho skriptech nepřepisuj a nepodmiňuj ho souhlasem s GA. Jeho cookies (`la_form_visitor` 1 rok, stav formuláře) a volání jsonip.com jsou popsané na /cookies. Až LeadAgent odpoví na dotazy k účelu, uprav tam sekci „Registrační formulář“.
